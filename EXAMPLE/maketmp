@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then  foldername=tmp         ; else  foldername=$1   ; fi
+
+date=`date | awk '{print $4}'`; random=$RANDOM;
+
+mkdir /scratch/04996/tg842952/tmp.$date.$random; ln -s /scratch/04996/tg842952/tmp.$date.$random ./$foldername
+

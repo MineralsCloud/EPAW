@@ -1,0 +1,9 @@
+#!/bin/sh
+#SBATCH -p normal
+#SBATCH -N 1
+#SBATCH --tasks-per-node=2
+#SBATCH -J job
+#SBATCH --time=02:31:09
+rm fortfile
+./EPAWmparent.exe<USER_INPUTS
+rm fortfile

@@ -1,0 +1,23 @@
+# NAME OF THE INPUT FILES
+INITIAL_ATOMPAW
+IN_DUMMY
+IN_PARENT
+IN_GAPRMTR
+IN_TARGET
+# OUTPUT FILES
+
+
+
+
+
+
+
+
+
+
+#FILE NAMES
+INPUT_DATASET         ## | File name for Initial standard PAW dataset generator
+IN_DUMMY              ## | File name for dummy indexes of standard PAW dataset generator
+IN_PARENT             ## | File name for Initial parent population
+IN_GAPRMTR            ## | File name for  GAs parameters to start with
+

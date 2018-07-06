@@ -1,0 +1,3 @@
+reset
+gfortran -o EXE_KEOSGA KEOSGA.f S_separation.f90 S_READPARAM.f S_WRITEPARAM.f S_READINPUTS.f S_CHECK.f S_f1.f S_stndr.f PINT.f S_CHECKIPOP.f S_ghost.f S_CONWFN.f S_INTGPAW.f  S_SIMPS.f S_WFNCNSTRNT.f getVolvsEngfromabinit.f90 S_EoSfit.f S_sort.f S_sup.f S_TOURNMNT.f S_crsvr.f S_coin.f S_rnd.f S_BLX.f S_ARITH.f S_MPMUT.f S_bm.f S_CHKINDV.f S_nrow.f
+#gfortran -o EXE_KEOSGA KEOSGA.f S_separation.f90 S_READPARAM.f S_WRITEPARAM.f S_READINPUTS.f S_CHECK.f S_f1.f S_stndr.f PINT.f S_CHECKIPOP.f S_ghost.f S_CONWFN.f S_INTGPAW.f  S_SIMPS.f S_WFNCNSTRNT.f getVolvsEngfromabinit.f90 S_EoSfit.f S_sort.f S_sup.f S_TOURNMNT.f S_crsvr.f S_coin.f S_rnd.f S_BLX.f S_ARITH.f S_MPMUT.f S_bm.f S_CHKINDV.f QE.f S_nrow.f

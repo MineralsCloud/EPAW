@@ -1,0 +1,32 @@
+Ca 20
+GGA-PBE  scalarrelativistic loggrid 1500
+4 3 3 0 0 0
+3 2 0
+0 0 0
+c
+c
+v
+v
+c
+v
+v
+2
+1.9 1.7 1.8 1.9
+n
+y
+3.0
+n
+y
+2.0
+n
+Vanderbilt
+3 0.0 ultrasoft
+1.8
+1.8
+1.9
+1.9
+1.9
+1.9
+PWSCFOUT                                                     
+PWPAWOUT
+END 

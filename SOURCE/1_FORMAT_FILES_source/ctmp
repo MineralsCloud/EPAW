@@ -1,0 +1,2 @@
+reset
+ifort -o EXE_FORMAT_FILES INITIALIZATION.f S_inp.f S_nrow.f S_f2.f S_f1.f S_stndr.f S_N_wfn_lg.f S_DSTCNTY.f S_INTGPAW.f S_separation.f90 S_CONWFN.f S_user.f S_params.f S_SIMPS.f bm3fit.f90 

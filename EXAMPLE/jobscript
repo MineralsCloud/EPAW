@@ -1,0 +1,11 @@
+#!/bin/sh
+#SBATCH -p normal
+#SBATCH -N 10
+#SBATCH --tasks-per-node=60
+#SBATCH -J job
+#SBATCH --time=14:31:09
+  
+#python makeEoSinputs.py
+
+./EPAWopt.exe<USER_INPUTS
+

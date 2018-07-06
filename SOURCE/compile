@@ -1,0 +1,16 @@
+reset
+
+cd 1_FORMAT_FILES_source
+ifort -o EPAWsetup.exe INITIALIZATION.f S_inp.f S_nrow.f S_f2.f S_f1.f S_stndr.f S_N_wfn_lg.f S_DSTCNTY.f S_INTGPAW.f S_separation.f90 S_CONWFN.f S_user.f S_params.f S_SIMPS.f bm3fit.f90
+cp EPAWsetup.exe ../.
+
+cd ../2_MAKE_PARENT_source
+ifort -o EPAWmparent.exe prep_parent.f S_separation.f90 S_READPARAM.f S_WRITEPARAM.f S_READINPUTS.f S_CHECK.f INPINT.f S_f1.f S_stndr.f S_CONIPOP.f S_DSTCNTY.f S_CONWFN.f S_INTGPAW.f S_WFNCNSTRNT.f S_SIMPS.f S_SMPMUT.f S_CHKINDV.f S_bm.f S_bm1.f S_coin.f
+cp EPAWmparent.exe ../.
+
+cd ../3_EOSOPTIMIZE_source
+ifort -o EPAWopt.exe KEOSGA.f S_separation.f90 S_READPARAM.f S_WRITEPARAM.f S_READINPUTS.f S_CHECK.f S_f1.f S_stndr.f PINT.f S_CHECKIPOP.f S_ghost.f S_CONWFN.f S_INTGPAW.f  S_SIMPS.f S_WFNCNSTRNT.f getVolvsEngfromabinit.f90 S_EoSfit.f S_sort.f S_sup.f S_TOURNMNT.f S_crsvr.f S_coin.f S_rnd.f S_BLX.f S_ARITH.f S_MPMUT.f S_bm.f S_CHKINDV.f S_nrow.f
+cp EPAWopt.exe ../.
+
+cd ..
+

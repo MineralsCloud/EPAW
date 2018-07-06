@@ -1,0 +1,23 @@
+0                                                # 0 for EoS; 1 for Delta optimization
+0                                                # 0 for scrach; 1 for predefined parent population
+10                                               # Cardinality of parent population
+2.10                                             # Maximum allowed value for Rc >= Rc (INPUT_DATASET)
+1.35                                             # Minimum allowed value for Rc: must be >=0
+0.45                                             # Minimum allowed value (other distance parameters)
+1.00       1.00       1.00       1.00            # P_ext=1.00d0,P_h=1.00d0,P_m=1.00d0,P_l=0.95
+7                                                # tolerace limit for wf and PSwf < 10
+15                                               # Number of volume points at which electronic structure calculations performed
+400                                              # No. of PV data in < IN_TARGET > file = 400
+-3808.662073860247 46.38436 36.316 3.838         # E0, V0, B0, B0p  guess for WIEN2k
+157.8836 367.2691                                # Vmin, Vmax     for WIEN2k
+0                                                # 0 default; 1 for manual entry for rc constraints of each member of parent population
+2.10 1.70 1.20                                   # Rc max; Rc min; Rci min of first solution
+2.05 1.75 1.25                                   # Rc max; Rc min; Rci min of second solution
+2.05 1.70 1.20                                   # Rc max; Rc min; Rci min of third solution
+2.10 1.65 1.15                                   # Rc max; Rc min; Rci min of fourth solution
+1.95 1.75 1.25                                   # Rc max; Rc min; Rci min of fifth solution
+2.00 1.70 1.20                                   # Rc max; Rc min; Rci min of sixth solution
+1.95 1.85 1.25                                   # Rc max; Rc min; Rci min of seventh solution
+1.90 1.75 1.25                                   # Rc max; Rc min; Rci min of eighth solution
+1.95 1.65 1.15                                   # Rc max; Rc min; Rci min of nineth solution
+2.00 1.75 1.15                                   # Rc max; Rc min; Rci min of tenth solution
