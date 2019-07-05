@@ -146,22 +146,22 @@ There are two parent directories:
       ```shell
       orig=0
       for j in `seq 1 10`; do # j is the dummy index for the number of data-sets in each iteration, i.e., cardinality of the GA population.
-      		for i in `seq 1 15`; do # i is the dummy index for the number of volume points at which electronic structure calculations will be performed in each iteration/generation.
-      				cd pot$j/eos$i/
+      	for i in `seq 1 15`; do # i is the dummy index for the number of volume points at which electronic structure calculations will be performed in each iteration/generation.
+      		cd pot$j/eos$i/
       
               rm -r tmp
-              ibrun -n 4 -o $orig pw.x -nk 2 -in scf.in >scf.out & # here and beneath 4 is the number of cores per SCF calculations. 
+              ibrun -n 4 -o $orig pw.x -nk 2 -in scf.in >scf.out & # here and beneath 4 is the number of cores per SCF calculations.
               orig=`echo "$orig + 4" | bc`
               sleep 1
               cd ../../
-      		done
+      	done
       done
       wait
       # For the above setting we need at least 10*15*4=600 cores/processors in each iteration steps.
-      # We recommend not to change the cardinality of the GA population, i.e., npop=10. 
+      # We recommend not to change the cardinality of the GA population, i.e., npop=10.
       # Now if one reduce the number of volume points at which electronic structure calculations will be performed to 7, and assign one core per job then the total number of required processors will be
       # 10*7*1=70
-      # Therefore, according to the available system adjust the numbers. 
+      # Therefore, according to the available system adjust the numbers.
       ```
    
       The rest of the part should be unaltered.
